@@ -5,11 +5,11 @@
  *
  * Return: Always 0 (Success)
  */
-int main (void)
+int main(void)
 {
 	char str[] = "\"Programming is like building a multilingual puzzle";
 	/*use puts function to make use of string*/
-	puts (str);
+	puts(str);
 	return (0);
 }
 
