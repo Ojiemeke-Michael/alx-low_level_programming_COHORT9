@@ -10,6 +10,6 @@ int main(void)
 	char str[] = "\"Programming is like building a multilingual puzzle";
 	/*use puts function to make use of string*/
 	puts (str);
-	return(0);
+	return (0);
 }
 
