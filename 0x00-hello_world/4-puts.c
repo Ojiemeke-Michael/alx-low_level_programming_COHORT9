@@ -2,20 +2,16 @@
 
 
 /**
-
  * main - Entry point
-
  *
-
  * Return: Always 0 (Success)
-
  */
 
 int main(void)
-
 {
 	char str[] = "\"Programming is like building a multilingual puzzle";
-	puts(str);
+	/*use puts function to make use of string*/
+	puts( str );
 	
 	return(0);
 }
