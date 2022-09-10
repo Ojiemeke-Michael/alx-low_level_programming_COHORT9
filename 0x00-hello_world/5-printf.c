@@ -8,6 +8,7 @@
 int main(void)
 {
 	/*the command printf prints strings inputed into it*/
-	printf("with proper grammar, but the outcome
-		is a piece of art,\n");
+	printf("with proper grammar, but the outcome");
+	printf("is a piece of art,\n");
 	return (0);
+}
