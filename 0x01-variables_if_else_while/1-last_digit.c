@@ -28,7 +28,7 @@ int main(void)
 	} else if ((e < 6) && (e != 0))
 	{
 		printf("Last string of %d is %d and is ", n, e);
-		printf("less than and is not 0\n");
+		printf("less than 6 and not 0\n");
 	}
 	return (0);
 }
