@@ -2,8 +2,10 @@
 
 /**
  * main - print hello world
- * Description - print this program prints hello world
- * Return 0
+ *
+ * Description - print this program prints all base ten numbers from 0 - 9
+ *
+ * Return: 0
  */
 
 int main(void)
