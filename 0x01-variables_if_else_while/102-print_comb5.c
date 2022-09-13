@@ -10,22 +10,30 @@
  */
 int main(void)
 {
-	int p;
-	int q;
+	int p = 48;
+	int q = 0;
+	int b;
+	int c = 44;
 
-	for (p = 0; p <= 98; p++)
+	while (q <= 99)
 	{
-		for (q = p + 1; p <= 99; q++)
+		b = q + 1;
+		while (b <= 99)
 		{
-			putchar((p / 10) + '0');
-			putchar((p % 10) + '0');
-			putchar(' ');
-			putchar((q / 10) + '0');
-			putchar((q % 10) + '0');
-			if (p == 98 && q == 99)
-			putchar(',');
-			putchar(' ');
+			putchar((q / 10) + p);
+			putchar((q % 10) + p);
+			putchar(32);
+			putchar((b / 10) + p);
+			putchar((b % 10) + p);
+			if (q != 98 || b != 99)
+			{
+			putchar(c);
+			putchar(32);
+			}
+			b += 1;
 		}
+		q++;
 	}
+	putchar('\n');
 	return (0);
 }
