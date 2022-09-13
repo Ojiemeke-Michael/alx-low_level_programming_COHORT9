@@ -3,18 +3,13 @@
 /**
  * main - Entry point
  *
- * int _putchar(void) - function from "main.h".
- *
  * Description: prints "_putchar" followed by newline
  * function: function int_putchar(void)
  *
+ * Return: 0 Always
  */
-
- int _putchar(char c); 
-
- int main(void)
+int main(void)
 {
-
 	_putchar('_');
 	_putchar('p');
 	_putchar('u');
