@@ -1,12 +1,9 @@
 #include "main.h"
 
 /**
- * main -check the code.
+ * print_alphabet - to print all alphabets
  *
- * Descripton: function void print_alphabet(void) to
- * to print all alphabets using putchar
- *
- * Return: Always 0 (Success)
+ *Return: 1, 0, -1.
  */
 int main(void)
 {
@@ -20,7 +17,7 @@ void print_alphabet(void)
 
 	for (lc = 'a'; lc <= 'z'; lc++)
 	{
-		putchar(lc);
+		_putchar(lc);
 	}
 	putchar('\n');
 }
