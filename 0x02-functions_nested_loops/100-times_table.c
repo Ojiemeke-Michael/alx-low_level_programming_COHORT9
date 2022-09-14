@@ -14,24 +14,28 @@ void print_times_table(int n)
 	{
 		for (dig = 0; dig <= n; dig++)
 		{
-			_putchar(',');
-			_putchar(' ');
-			prdt = dig * times;
-			if (prdt < 99)
-				_putchar(' ');
-			if (prdt <= 9)
-				_putchar(' ');
-			if (prdt >= 100)
+			_putchar('0');
+			for (times = 1; times <= n; times++)
 			{
-				_putchar((prdt / 100) + '0');
-				_putchar((prdt / 10) % 10 + '0');
+				_putchar(',');
+				_putchar(' ');
+				prdt = dig * times;
+				if (prdt <= 99)
+					_putchar(' ');
+				if (prdt <= 9)
+					_putchar(' ');
+				if (prdt >= 100)
+				{
+					_putchar((prdt / 100) + '0');
+					_putchar((prdt / 10) % 10 + '0');
+				}
+				else if (prdt <= 99 && prdt >= 10)
+				{
+					_putchar((prdt / 10) + '0');
+				}
+				_putchar((prdt % 10) + '0');
 			}
-			else if (prdt <= 99 && prdt >= 10)
-			{
-				_putchar((prdt / 10) + '0');
-			}
-			_putchar((prdt % 10) + '0');
+			_putchar('\n');
 		}
-		_putchar('\n');
 	}
 }
