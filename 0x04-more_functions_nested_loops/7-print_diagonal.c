@@ -10,9 +10,6 @@ void print_diagonal(int n)
 {
 	int i;
 	int j;
-	char slash = '\';
-
-	if (n == 0 || n < 0)
 	{
 		_putchar('\n');
 	}
@@ -23,7 +20,7 @@ void print_diagonal(int n)
 			for (j = 1; j <= n; j++)
 			{
 				if (j == i)
-					_putchar(slash);
+					_putchar('\');
 				else
 				{
 					_putchar(' ');
