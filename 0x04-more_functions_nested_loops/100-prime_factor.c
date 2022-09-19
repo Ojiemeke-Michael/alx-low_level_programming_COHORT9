@@ -9,8 +9,10 @@
 int main(void)
 {
 	long int n;
+	long int div = 2;
+	long int ans = 0;
+	long int maxFact;
 	n = 612852475143;
-	long int div = 2, ans = 0, maxFact;
 
 	while (n != 0)
 	{
@@ -30,4 +32,3 @@ int main(void)
 	}
 	return (0);
 }
-	
