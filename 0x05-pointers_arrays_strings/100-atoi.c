@@ -22,7 +22,7 @@ int _atoi(char *s)
 		{
 			i++;
 			result = result * 10 + s[counter] - '0';
-	}
+		}
 	if (i < 0 && (s[counter] > 57))
 		break;
 		counter++;
