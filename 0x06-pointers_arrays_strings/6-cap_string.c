@@ -16,9 +16,9 @@ char *cap_string(char *p)
 		{
 			if (p[i] == a[j])
 			{
-				if (p[i] >= 'a' || p[i] <= 'z')
+				if (p[i + 1] >= 'a' || p[i + 1] <= 'z')
 				{
-					*(p + i) -= 32;
+					*(p + i + 1) -= 32;
 				}
 			}
 		}
