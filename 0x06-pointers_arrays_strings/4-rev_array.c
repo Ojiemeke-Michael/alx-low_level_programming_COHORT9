@@ -8,7 +8,7 @@
  */
 void reverse_array(int *a, int n)
 {
-	int i, z;
+	int i;
 	int temp;
 
 	temp = 0;
@@ -18,10 +18,5 @@ void reverse_array(int *a, int n)
 		temp = *(a + i);
 		*(a + i) = *(a + (n - 1 - i));
 		*(a + (n - 1 - i)) = temp;
-	}
-
-	for (z = 0; *(a + z) != '\0'; z++)
-	{
-		_putchar(*(a + z));
 	}
 }
