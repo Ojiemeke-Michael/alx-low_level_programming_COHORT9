@@ -8,15 +8,15 @@
  */
 char *leet(char *p)
 {
-	char a[] = "A,a,E,e,O,o,T,t,L,l";
-	char b[] = "4,4,3,3,0,0,7,7,1,1";
+	char a[] = "AaEeOoTtLl";
+	char b[] = "4433007711";
 	int i, j;
 
 	for (i = 0; *(p + i) != '\0'; i++)
 	{
 		for (j = 0; j <	10; j++)
 		{
-			if (*(p + i) == *(a + j))
+			if (*(a + j) == *(p + i))
 			{
 				*(p + i) = b[j];
 			}
