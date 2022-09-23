@@ -8,7 +8,7 @@
 char *cap_string(char *p)
 {
 	int i, j;
-	char a[] = "
+	char a[] = "\t\n,;.!?\"(){}";
 
 	for (i = 0; *(p + i) != '\0'; i++)
 	{
@@ -24,7 +24,7 @@ char *cap_string(char *p)
 				{
 					if (*(p + i - 1) == a[j])
 					{
-						*(*p + i) -= 32;
+						*(p + i) -= 32;
 					}
 				}
 			}
