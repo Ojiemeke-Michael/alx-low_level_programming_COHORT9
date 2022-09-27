@@ -11,16 +11,20 @@ void print_diagsums(int *a, int size)
 {
 	int sum1 = 0;
 	int sum2 = 0;
-	int i, j;
+	int i, j, u, x;
 
-	for (i = 0; i < (size * size); i + size + 1)
+	u = size + 1;
+	x = size - 1;
+
+	for (i = 0; i < (size * size); i++)
 	{
-		sum1 = sum1 + *(s + i);
+		if (i == 0 || i )
+		sum1 = sum1 + *(a + i);
 	}
 
-	for (j = size - 1; j < (size * size); j + size - 1)
+	for (j = size - 1; j < (size * size);j++)
 	{
-		sum2 = sum2 + *(s + j);
+		sum2 = sum2 + *(a + j);
 	}
 
 	printf("%d, %d\n", sum1, sum2);
