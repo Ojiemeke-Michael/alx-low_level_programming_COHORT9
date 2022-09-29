@@ -36,9 +36,7 @@ int _strlength(char *s)
  */
 void palin_check(char *s, int start, int end, int *flag)
 {
-	const int middle = end / 2;
-
-	if (start <= middle)
+	if (start <= end)
 	{
 		if (*(s + start) == *(s + end))
 			*flag *= 1;
