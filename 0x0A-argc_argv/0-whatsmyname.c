@@ -18,7 +18,7 @@
 int main(int argc, char *argv[])
 {
 	printf("%s\n", argv[0]);
-	(void)agrc;
+	(void)argc;
 
 	return (0);
 }
