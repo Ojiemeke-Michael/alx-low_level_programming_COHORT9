@@ -1,4 +1,6 @@
 #include <stdio.h>
+#include <stdlib.h>
+#include <limits.h>
 
 /**
  * main - a program that multiplies two numbers.
@@ -22,8 +24,8 @@ int main(int argc, char *argv[])
 		int i = 1;
 		int j = 2;
 
-		int first = argv[i];
-		int second = argv[j];
+		int first = atoi(argv[i]);
+		int second = atoi(argv[j]);
 		int res = first * second;
 
 		printf("%d\n", res);
