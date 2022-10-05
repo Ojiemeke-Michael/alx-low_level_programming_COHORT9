@@ -1,3 +1,4 @@
+#include <stdlib.h>
 #include <stdio.h>
 
 /**
@@ -15,25 +16,36 @@
  */
 int main(int argc, char *argv[])
 {
-	int i;
+	int i, j;
+	int sum;
 
-	int sum = 0;
-
-	if (argc < 1)
+	sum = 0;
+	if (argc < 2)
 	{
-		for (i = 1; i < argc; i++)
-		{
-			if ((argv[i] <= 0 && argv[i] <= 47) || (argv[i] >= 58 && argv[i] <= 255))
-			{
-				printf("Error");
-				return (1);
-			}
-			else
-			{
-				sum += argv[i];
-			}
-		}
+		putchar(48);
+		putchar('\n');
+		return (0);
 	}
 
-	return (sum);
+	for (i = 1; i < argc; i++)
+	{
+		char *str;
+
+		str = argv[i];
+
+		for (j = 0; *(str + j) != '\0'; j++)
+		{
+			if (str[j] < 48 || str[j] > 57)
+			{
+				printf("Error\n");
+				return (1);
+			}
+		}
+
+		sum += atoi(argv[i]);
+	}
+
+	printf("%d\n", sum);
+	return (0);
 }
+
