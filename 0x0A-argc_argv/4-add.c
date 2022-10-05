@@ -10,7 +10,8 @@
  *  of all the numbers can be stored in an int.
  *
  *  @argc: count or number of string arguments in arguments vector.
- *  @argv: pointer of arrays containing pointer which points to string           *  constants as argumuments from the command line.
+ *  @argv: pointer of arrays containing pointer which points to string
+ *  constants as argumuments from the command line.
  *
  *  Return: Always 0.
  */
