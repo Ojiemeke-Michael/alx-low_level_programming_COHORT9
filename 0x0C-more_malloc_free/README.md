@@ -1,0 +1,1 @@
+A project that deals with learning how to use Dynamic Memory Allocation as taught  at ALX Holberton School, How to use the exit function and What are the functions calloc and realloc from the standard library and how to use them.
