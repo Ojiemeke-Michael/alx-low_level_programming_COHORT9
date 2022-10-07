@@ -8,7 +8,8 @@
  *
  * @b: size of the allocated memory.
  *
- * Return: On success,  return pointer to allocated space. on failure, exit with 98.
+ * Return: On success,  return pointer to
+ * allocated space. on failure, exit with 98.
  */
 void *malloc_checked(unsigned int b)
 {
