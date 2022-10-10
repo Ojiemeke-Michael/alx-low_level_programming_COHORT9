@@ -1,0 +1,1 @@
+A project that deals with learning the use of preprocessor and its directives, What are macros and how to use them, What are the most common predefined macros, How to include guard your header files. A project from ALX.
