@@ -1,5 +1,10 @@
 #ifndef DOG_H_
 #define DOG_H_
+
+#include <stddef.h>
+#include <stdio.h>
+#include <stdlib.h>
+
 /**
  * struct dog - structure containing dog's information.
  * @name: name of dog.
@@ -7,9 +12,6 @@
  * @owner: thw owber of the dog.
  */
 
-#include <stddef.h>
-#include <stdio.h>
-#include <stdlib.h>
 
 struct dog
 {
