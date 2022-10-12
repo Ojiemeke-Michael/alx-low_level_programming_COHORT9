@@ -1,0 +1,1 @@
+An Alx Project that deals with learning the usw of pointer to functions, What are function pointers and how to use them, What does a function pointer exactly hold, Where does a function pointer point to in the virtual memory.
