@@ -9,10 +9,8 @@
  * struct dog - structure containing dog's information.
  * @name: name of dog.
  * @age: age of dog in decimal point.
- * @owner: thw owber of the dog.
+ * @owner: the owner of the dog.
  */
-
-
 struct dog
 {
 	char *name;
@@ -25,9 +23,11 @@ void print_dog(struct dog *d);
 
 /**
  * typedef - to change name of struct dog to dog_t,
- * dog_t - new name of structure.
+ * struct dog_t - new name of structure.
  */
-
 typedef struct dog dog_t;
+
+dog_t *new_dog(char *name, float age, char *owner);
+void free_dog(dog_t *d);
 
 #endif
