@@ -42,7 +42,10 @@ int main(int argc, char **argv)
 	{
 		printf("%02hhx", arr[i]);
 		if (i == bytes - 1)
+		{
 			printf("\n");
+			break;
+		}
 		else
 			printf(" ");
 	}
