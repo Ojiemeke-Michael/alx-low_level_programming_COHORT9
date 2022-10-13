@@ -7,6 +7,7 @@
 #include <string.h>
 
 /**
+ * struct op - Struct op.
  * typedef - for changing name.
  * op_t - the new name fo r struct op.
  * struct op - Struct op
