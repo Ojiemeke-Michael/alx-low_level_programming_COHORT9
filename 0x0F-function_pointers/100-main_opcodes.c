@@ -3,6 +3,13 @@
 
 /**
  * main - a program that prints the opcodes of its own main function.
+ * Usage: ./main number_of_bytes.
+ * Output format:
+ * the opcodes should be printed in hexadecimal, lowercase
+ * each opcode is two char long
+ * listing ends with a new line
+ *
+ * see example
  * @argc: argument count which is the number of
  * arguments from the command line.
  * @argv: argument vector which is the array of pointers
