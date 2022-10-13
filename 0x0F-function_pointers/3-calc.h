@@ -4,8 +4,11 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <unistd.h>
+#include <string.h>
 
 /**
+ * typedef - for changing name.
+ * op_t - the new name fo r struct op.
  * struct op - Struct op
  *
  * @op: The operator
