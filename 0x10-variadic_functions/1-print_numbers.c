@@ -17,7 +17,7 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 
 	m = 0;
 
-	if (n > 0 && separator != NULL)
+	if (n > 0)
 	{
 		va_start(printNum, n);
 		for (i = 0; i < n; i++)
@@ -30,10 +30,17 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 				printf("\n");
 				break;
 			}
-			for (m = 0; *(separator + m) != '\0'; m++)
-				printf("%c", *(separator + m));
+			if (separator != NULL)
+			{
+				for (m = 0; *(separator + m) != '\0'; m++)
+					printf("%c", *(separator + m));
+			}
 		}
 	}
 
 	va_end(printNum);
+
+	if (n <= 0)
+		putchar('\n');
+
 }
