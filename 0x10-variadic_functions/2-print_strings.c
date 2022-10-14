@@ -17,7 +17,7 @@ void print_strings(const char *separator, const unsigned int n, ...)
 	va_list printString;
 	char *j;
 
-	if (n > 0 && separator != NULL)
+	if (n > 0)
 	{
 		va_start(printString, n);
 		for (i = 0; i < n; i++)
@@ -39,12 +39,17 @@ void print_strings(const char *separator, const unsigned int n, ...)
 				break;
 			}
 
-			for (m = 0; *(separator + m) != '\0'; m++)
-				printf("%c", *(separator + m));
+			if (separator != NULL)
+			{
+				for (m = 0; *(separator + m) != '\0'; m++)
+					printf("%c", *(separator + m));
+			}
 		}
 	}
-
 	va_end(printString);
+
+	if (n <= 0)
+		printf("\n");
 }
 
 
