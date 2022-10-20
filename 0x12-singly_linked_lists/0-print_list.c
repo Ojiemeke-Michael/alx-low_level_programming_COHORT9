@@ -2,7 +2,7 @@
 
 /**
  * print_list -  function that prints all the elements of a list_t list.
- * 
+ *
  * @h: pointer to node in a singly linked lists.
  *
  * Return: the number of nodes printed.
@@ -22,9 +22,9 @@ size_t print_list(const list_t *h)
 				printf("[%d] %s\n", h->len, h->str);
 			count++;
 			h = h->next;
-			
+
 		}
 	}
 
-	return(count);
+	return (count);
 }
