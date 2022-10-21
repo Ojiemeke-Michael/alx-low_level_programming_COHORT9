@@ -12,30 +12,10 @@ size_t list_len(const list_t *h)
 {
 	unsigned int elem_num;
 
-	if (h)
+	while (h != NULL)
 	{
-		if (h->str == NULL && h->next != NULL)
-		{
-			elem_num = 2;
-		}
-		else if (h->next == NULL && h->str != NULL)
-		{
-			elem_num = 2;
-		}
-		else if (h->str == NULL && h->next == NULL)
-		{
-			elem_num = 1;
-		}
-		else if (h->next != NULL)
-		{
-			h = h->next;
-			if (h->next == NULL)
-				elem_num = 2;
-		}
-		else if (h->str != NULL && h->next != NULL)
-		{
-			elem_num = 3;
-		}
+		elem_num++;
+		h = h->next;
 	}
 
 	return (elem_num);
